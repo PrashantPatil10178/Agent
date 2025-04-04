@@ -11,7 +11,7 @@ export default async function PriceOptimizationAgent(
   try {
     const systemPrompt = `
 You are a smart Price Optimization AI assistant. Your job is to analyze pricing data from the uploaded CSV file and predict optimal pricing based on the user's custom input for a specific product and store context.
-
+CSV DATA ${csvData.slice(0, 15000)}
 ## Dataset Provided
 The user uploaded a CSV file with pricing data. The file includes:
 
